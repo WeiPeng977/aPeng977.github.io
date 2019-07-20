@@ -23,7 +23,7 @@ if{
 [必应]，是国内最好用的英文搜索引擎，我爱typingtest。
 
 [Typing Test]: https://cn.bing.com/search?q=typing+test&qs=n&form=QBLHCN&sp=-1&ghc=1&pq=typing+test&sc=8-11&sk=&cvid=EE36D54BC4574997BC770FC1850BAC06 'Typing Test'
-[Typing Test]，是一个可以再搜索引擎中加载的打字练习程序。
+[Typing Test]，是一个可以在搜索引擎中加载的打字练习程序。
 
 [简书]: https://www.jianshu.com(创作你的创作)
 [简书]，是一个创作社区，任何人均可以再其上进行创作。用户在简书上面可以方便得多创作自己的作品，互相交流。
