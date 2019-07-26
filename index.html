@@ -69,6 +69,114 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-htmlTest" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/26/htmlTest/" class="article-date">
+  <time datetime="2019-07-26T08:01:04.000Z" itemprop="datePublished">2019-07-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/26/htmlTest/">htmlTest</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#HTML测试</p>
+<hr>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta charset="UTF-8">
+<title>domTest</title>
+<script>
+function myFunction(){
+    var node=document.createElement("LI");
+    var textnode=document.createTextNode("Water");
+    node.appendChild(textnode);
+    document.getElementById("myList").appendChild(node);
+}
+function showURI(){
+document.getElementById("demo1").innerHTML=document.baseURI;
+}
+function showHTML(){
+document.getElementById("demo1").innerHTML=document.body.innerHTML;
+}
+function creatP(){
+    var x = document.createElement("P");
+    var t = document.createTextNode("这是新的段落。");
+    x.appendChild(t);
+    document.body.appendChild(x);
+}
+function createDoc(){
+    var doc=document.open("text/html","replace");
+    var txt="<!DOCTYPE html><html><body>学习 HTML DOM 很有趣!</body><html>";
+    document.write(txt);
+    doc.close();
+}
+function createWindow(){
+    var w=window.open();
+    w.document.write("HelloWorld!");
+}
+function removeEvent(){
+    document.removeEventListener("click",addEvent);
+}
+function addEventF(){
+    document.addEventListener("click",addEvent);
+}
+</script>
+</head>
+
+<body>
+<p>addEventListener()方法向文件中添加点击事件。</p>
+<p>尝试点击文档的任何地方。</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+document.addEventListener("click",addEvent);
+function addEvent(){
+    document.getElementById("demo").innerHTML = "Hello World"};
+</script>
+<button onclick="myFunction()">添加按钮</button>
+<button onclick="showURI()">显示URI</button>
+<button onclick="showHTML()">显示HTML内容</button>
+<button type="button" onclick="creatP()">创建新的段落</button>
+<input type="button" value="创建窗口" onclick="createWindow()">
+<input type="button" value="创建文档" onclick="createDoc()">
+<input type="button" value="移除点击事件" onclick="removeEvent()">
+<input type="button" value="添加点击事件" onclick="addEventF()">
+<ul id="myList"><li>Coffee</li><li>Tea</li></ul>
+<p>单击按钮将项目添加到列表中</p>
+
+
+</body>
+</html>
+        
+          <p class="article-more-link">
+            <a href="/2019/07/26/htmlTest/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://apeng977.github.io/2019/07/26/htmlTest/" data-id="cjyjv1i860001rdbpnz9akyz4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-2019-7-20" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/21/2019-7-20/" class="article-date">
@@ -97,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://apeng977.github.io/2019/07/21/2019-7-20/" data-id="cjybqq47z0000hjbph9fusoiu" class="article-share-link">Share</a>
+      <a data-url="https://apeng977.github.io/2019/07/21/2019-7-20/" data-id="cjyjv1i810000rdbpevye93am" class="article-share-link">Share</a>
       
       
     </footer>
@@ -175,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://apeng977.github.io/2019/07/20/mdTest/" data-id="cjybqq4880002hjbpsdat1qy0" class="article-share-link">Share</a>
+      <a data-url="https://apeng977.github.io/2019/07/20/mdTest/" data-id="cjyjv1i8b0003rdbpgjhvji2c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +332,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://apeng977.github.io/2019/07/20/hello-world/" data-id="cjybqq4850001hjbp3br8qi1x" class="article-share-link">Share</a>
+      <a data-url="https://apeng977.github.io/2019/07/20/hello-world/" data-id="cjyjv1i890002rdbpmy5hf9an" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,6 +371,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/07/26/htmlTest/">htmlTest</a>
+          </li>
         
           <li>
             <a href="/2019/07/21/2019-7-20/">2019.7.20</a>

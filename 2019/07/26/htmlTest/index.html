@@ -5,21 +5,19 @@
   
 
   
-  <title>2019.7.20 | 阿澎的博客</title>
+  <title>htmlTest | 阿澎的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#阿澎的日记2019年7月20日周六最近阿澎有点闲，好想找小伙伴出来玩儿呀！ 可是阿澎又不闲，世界还等着他去拯救呢！ 所以阿澎建了个小站，记录一下阿澎拯救世界的过程吧！  这是超级阿澎的logo！1.0版本哦！">
+  <meta name="description" content="#HTML测试     domTest  function myFunction(){     var node=document.createElement(&quot;LI&quot;);     var textnode=document.createTextNode(&quot;Water&quot;);     node.appendChild(textnode);     document.getElementById(&quot;m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019.7.20">
-<meta property="og:url" content="https://apeng977.github.io/2019/07/21/2019-7-20/index.html">
+<meta property="og:title" content="htmlTest">
+<meta property="og:url" content="https://apeng977.github.io/2019/07/26/htmlTest/index.html">
 <meta property="og:site_name" content="阿澎的博客">
-<meta property="og:description" content="#阿澎的日记2019年7月20日周六最近阿澎有点闲，好想找小伙伴出来玩儿呀！ 可是阿澎又不闲，世界还等着他去拯救呢！ 所以阿澎建了个小站，记录一下阿澎拯救世界的过程吧！  这是超级阿澎的logo！1.0版本哦！">
+<meta property="og:description" content="#HTML测试     domTest  function myFunction(){     var node=document.createElement(&quot;LI&quot;);     var textnode=document.createTextNode(&quot;Water&quot;);     node.appendChild(textnode);     document.getElementById(&quot;m">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://apeng977.github.io/2019/07/21/2019-7-20/superAp1.0.png">
-<meta property="og:updated_time" content="2019-07-20T16:19:15.454Z">
+<meta property="og:updated_time" content="2019-07-26T08:40:34.035Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2019.7.20">
-<meta name="twitter:description" content="#阿澎的日记2019年7月20日周六最近阿澎有点闲，好想找小伙伴出来玩儿呀！ 可是阿澎又不闲，世界还等着他去拯救呢！ 所以阿澎建了个小站，记录一下阿澎拯救世界的过程吧！  这是超级阿澎的logo！1.0版本哦！">
-<meta name="twitter:image" content="https://apeng977.github.io/2019/07/21/2019-7-20/superAp1.0.png">
+<meta name="twitter:title" content="htmlTest">
+<meta name="twitter:description" content="#HTML测试     domTest  function myFunction(){     var node=document.createElement(&quot;LI&quot;);     var textnode=document.createTextNode(&quot;Water&quot;);     node.appendChild(textnode);     document.getElementById(&quot;m">
   
     <link rel="alternate" href="/atom.xml" title="阿澎的博客" type="application/atom+xml">
   
@@ -70,10 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-2019-7-20" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-htmlTest" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/07/21/2019-7-20/" class="article-date">
-  <time datetime="2019-07-20T16:09:32.000Z" itemprop="datePublished">2019-07-21</time>
+    <a href="/2019/07/26/htmlTest/" class="article-date">
+  <time datetime="2019-07-26T08:01:04.000Z" itemprop="datePublished">2019-07-26</time>
 </a>
     
   </div>
@@ -84,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      2019.7.20
+      htmlTest
     </h1>
   
 
@@ -92,13 +90,82 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="阿澎的日记2019年7月20日周六"><a href="#阿澎的日记2019年7月20日周六" class="headerlink" title="#阿澎的日记2019年7月20日周六"></a>#阿澎的日记2019年7月20日周六</h2><p>最近阿澎有点闲，好想找小伙伴出来玩儿呀！ 可是阿澎又不闲，世界还等着他去拯救呢！ 所以阿澎建了个小站，记录一下阿澎拯救世界的过程吧！</p>
-<img src="/2019/07/21/2019-7-20/superAp1.0.png" title="This is superAp!">
-<center>这是超级阿澎的logo！1.0版本哦！</center>
+        <p>#HTML测试</p>
+<hr>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta charset="UTF-8">
+<title>domTest</title>
+<script>
+function myFunction(){
+    var node=document.createElement("LI");
+    var textnode=document.createTextNode("Water");
+    node.appendChild(textnode);
+    document.getElementById("myList").appendChild(node);
+}
+function showURI(){
+document.getElementById("demo1").innerHTML=document.baseURI;
+}
+function showHTML(){
+document.getElementById("demo1").innerHTML=document.body.innerHTML;
+}
+function creatP(){
+    var x = document.createElement("P");
+    var t = document.createTextNode("这是新的段落。");
+    x.appendChild(t);
+    document.body.appendChild(x);
+}
+function createDoc(){
+    var doc=document.open("text/html","replace");
+    var txt="<!DOCTYPE html><html><body>学习 HTML DOM 很有趣!</body><html>";
+    document.write(txt);
+    doc.close();
+}
+function createWindow(){
+    var w=window.open();
+    w.document.write("HelloWorld!");
+}
+function removeEvent(){
+    document.removeEventListener("click",addEvent);
+}
+function addEventF(){
+    document.addEventListener("click",addEvent);
+}
+</script>
+</head>
+
+<body>
+<p>addEventListener()方法向文件中添加点击事件。</p>
+<p>尝试点击文档的任何地方。</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+document.addEventListener("click",addEvent);
+function addEvent(){
+    document.getElementById("demo").innerHTML = "Hello World"};
+</script>
+<button onclick="myFunction()">添加按钮</button>
+<button onclick="showURI()">显示URI</button>
+<button onclick="showHTML()">显示HTML内容</button>
+<button type="button" onclick="creatP()">创建新的段落</button>
+<input type="button" value="创建窗口" onclick="createWindow()">
+<input type="button" value="创建文档" onclick="createDoc()">
+<input type="button" value="移除点击事件" onclick="removeEvent()">
+<input type="button" value="添加点击事件" onclick="addEventF()">
+<ul id="myList"><li>Coffee</li><li>Tea</li></ul>
+<p>单击按钮将项目添加到列表中</p>
+
+
+</body>
+</html>
+<a id="more"></a>
+
+<p>##结论<br>1.MD重新定义了一些HTML语句的使用方法使其更加适合纯文本展示<br>2.MD在最终展示时还是转换成了HTML语言<br>3.如果想要在md中使用JS需要在浏览器中打开才有效果，而且需要在md文件内部声明函数，如果在翻译成html时语法正确那么就可以在浏览器中正确运行</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://apeng977.github.io/2019/07/21/2019-7-20/" data-id="cjyjv1i810000rdbpevye93am" class="article-share-link">Share</a>
+      <a data-url="https://apeng977.github.io/2019/07/26/htmlTest/" data-id="cjyjv1i860001rdbpnz9akyz4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -107,19 +174,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/07/26/htmlTest/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          htmlTest
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/20/mdTest/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/07/21/2019-7-20/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">mdTest</div>
+      <div class="article-nav-title">2019.7.20</div>
     </a>
   
 </nav>
