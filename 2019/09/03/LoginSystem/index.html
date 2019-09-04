@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>LoginSystem | 阿澎的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。 展示           登录页面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LoginSystem">
+<meta property="og:url" content="https://apeng977.github.io/2019/09/03/LoginSystem/index.html">
+<meta property="og:site_name" content="阿澎的博客">
+<meta property="og:description" content="JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。 展示           登录页面">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/LoginPage.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/usernameEmpty.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/passwordEmpty.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/passwordWrong.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/userExists.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/RegisterPage.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/usernameEmpty.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/passwordEmpty.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/registerUserExists.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/registerSuccessful.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/UserPage.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/logoutSuccessful.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/ModifyPage.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/passwordEmpty.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/modifySuccessful.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/userTest_db.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/flowEnd.png">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/login.jpg">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/register.jpg">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/user.jpg">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/modify.jpg">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/flow.jpg">
+<meta property="og:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/userTest_db.png">
+<meta property="og:updated_time" content="2019-09-04T15:59:26.974Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LoginSystem">
+<meta name="twitter:description" content="JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。 展示           登录页面">
+<meta name="twitter:image" content="https://apeng977.github.io/2019/09/03/LoginSystem/LoginPage.png">
+  
+    <link rel="alternate" href="/atom.xml" title="阿澎的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">阿澎的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">The title will be changed someday</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://apeng977.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-LoginSystem" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/03/LoginSystem/" class="article-date">
+  <time datetime="2019-09-03T04:58:36.000Z" itemprop="datePublished">2019-09-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      LoginSystem
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。"><a href="#JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。" class="headerlink" title="JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。"></a>JavaWeb项目，基于jsp、jdbc、servlet、mysql的简单登录系统。</h2><ul>
+<li>展示   <br>
+   <br>
+   <img src="/2019/09/03/LoginSystem/LoginPage.png" title="登录页面"><center>登录页面<center>
+   <br><a id="more"></a>
+   <img src="/2019/09/03/LoginSystem/usernameEmpty.png" title="用户名为空"><br><center>用户名为空<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/passwordEmpty.png" title="密码为空"><br><center>密码为空<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/passwordWrong.png" title="密码错误"><br><center>密码错误<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/userExists.png" title="用户不存在"><br><center>用户不存在<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/RegisterPage.png" title="注册页面"><center>注册页面</center>
+   <br>
+    <img src="/2019/09/03/LoginSystem/usernameEmpty.png" title="用户名为空"><br><center>用户名为空<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/passwordEmpty.png" title="密码为空"><br><center>密码为空<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/registerUserExists.png" title="用户已存在"><center>用户已存在</center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/registerSuccessful.png" title="注册成功"><br><center>注册成功<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/UserPage.png" title="用户页面"><center>用户页面</center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/logoutSuccessful.png" title="注销成功"><center>注销成功</center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/ModifyPage.png" title="修改页面"><center>修改页面</center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/passwordEmpty.png" title="密码为空"><br><center>密码为空<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/modifySuccessful.png" title="修改成功"><br><center>修改成功<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/userTest_db.png" title="数据库表"><br><center>数据库表<center>
+   <br>
+   <img src="/2019/09/03/LoginSystem/flowEnd.png" title="完成后的流程图"><br><center>完成后的流程图</center>
+
+
+</center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></center></li>
+</ul>
+<ul>
+<li><p>简介</p>
+<ul>
+<li>！纯练习使用，切勿用于生产环境 ！</li>
+<li>基于之前练习的一个基于jsp、jdbc、servlet、mysql的一个crud项目，想深入练习一下，做一个什么什么系统什么的，但基本上是个系统就会有登录功能，那就从登录功能开始实现吧！</li>
+<li>经过大概两周的断断续续的练习，注册，登录，修改，注销功能均已实现。</li>
+</ul>
+</li>
+<li><p>设计</p>
+<ul>
+<li>登录系统应当可以 注册、登录、修改密码、以及注销用户</li>
+<li>界面使用最简单的html实现，不求美观，实现功能即可</li>
+<li>数据库 test_db 表 user 中有 userName 和 password 两列，其中userName为主键</li>
+<li>类 User user.java 中有 userName 和 password 变量  以及变量对应的get和set方法 </li>
+<li>数据访问层 UserDao.java 连接数据库，并实现对数据库中数据的增删改查四个操作</li>
+<li>控制+业务层 UserServlet.java 接收页面传来的参数，并且调用Dao中的增删改查来实现 登录、注册、修改密码、删除四个操作</li>
+<li>页面 登录页面 index.jsp 注册页面 register.jsp 用户页面 user.jsp 修改页面 modify.jsp <ul>
+<li>界面原型：<br>
+<br>
+<img src="/2019/09/03/LoginSystem/login.jpg" title="登录页面"><br><center>登录页面<center>
+<br>
+<img src="/2019/09/03/LoginSystem/register.jpg" title="注册页面"><br><center>注册页面</center>
+<br>
+<img src="/2019/09/03/LoginSystem/user.jpg" title="用户页面"><br><center>用户页面</center>
+<br>
+<img src="/2019/09/03/LoginSystem/modify.jpg" title="修改页面"><br><center>修改页面</center>
+<br>
+<img src="/2019/09/03/LoginSystem/flow.jpg" title="流程图"><br><center></center>流程图</center></center></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实现</p>
+<ul>
+<li><p>数据库 test_db 表 user，使用navicate创建数据库test_db, 表user,列userName和password:<br><br><img src="/2019/09/03/LoginSystem/userTest_db.png" title="数据库表"><br><center>数据库表<center><br></center></center></p>
+</li>
+<li><p>类 User user.java <br></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">package Classes;</span><br><span class="line"></span><br><span class="line">//user类</span><br><span class="line">public class User &#123;</span><br><span class="line"></span><br><span class="line">    protected String userName;</span><br><span class="line">    protected String password;</span><br><span class="line"></span><br><span class="line">    public User() &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public User(String userName, String password) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.userName = userName;</span><br><span class="line">        this.password = password;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public String getUserName() &#123;</span><br><span class="line">        return userName;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setUserName(String userName) &#123;</span><br><span class="line">        this.userName = userName;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public String getPassword() &#123;</span><br><span class="line">        return password;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setPassword(String password) &#123;</span><br><span class="line">        this.password = password;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据访问层 UserDao.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br></pre></td><td class="code"><pre><span class="line">package Dao;</span><br><span class="line"></span><br><span class="line">import Classes.User;</span><br><span class="line">import java.sql.*;</span><br><span class="line"></span><br><span class="line">public class UserDao &#123;</span><br><span class="line"></span><br><span class="line">    //JDBC驱动名及数据库URL，用户名以及密码。</span><br><span class="line">    private static final String DB_URL = &quot;jdbc:mysql://localhost:3306/test_db&quot;;</span><br><span class="line">    private static final String USER = &quot;root&quot;;</span><br><span class="line">    private static final String PASS = &quot;root&quot;;</span><br><span class="line"></span><br><span class="line">    //SQL语句</span><br><span class="line">    private static final String INSERT_USER_SQL = &quot;INSERT INTO user&quot; + &quot;(userName, password) VALUES&quot; + &quot;(?,?);&quot;;</span><br><span class="line">    private static final String SELECT_USER_BY_USERNAME = &quot;select userName, password from user where userName = ?;&quot;;</span><br><span class="line">    private static final String DELETE_USER_SQL = &quot;delete from user where userName = ?;&quot;;</span><br><span class="line">    private static final String UPDATE_USER_SQL = &quot;update User set password = ? where userName =?;&quot;;</span><br><span class="line"></span><br><span class="line">    //连接数据库</span><br><span class="line">    protected Connection getConnection() &#123;</span><br><span class="line">        Connection connection = null;</span><br><span class="line">        try &#123;</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            connection = DriverManager.getConnection(DB_URL, USER, PASS);</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        return connection;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void createUser(User user) throws SQLException &#123;</span><br><span class="line">        System.out.println(INSERT_USER_SQL);</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创建prepareStatement对象</span><br><span class="line">             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER_SQL)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向preparedStatement中赋值</span><br><span class="line">            preparedStatement.setString(1, user.getUserName());</span><br><span class="line">            preparedStatement.setString(2, user.getPassword());</span><br><span class="line">            System.out.println(preparedStatement);</span><br><span class="line"></span><br><span class="line">            //第四步，执行创建</span><br><span class="line">            preparedStatement.executeUpdate();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            printSQLException(e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public User readUser(String userName) &#123;</span><br><span class="line">        User user = null;</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创件prepareStatement对象</span><br><span class="line">             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_USERNAME)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向preparedStatement中赋值</span><br><span class="line">            preparedStatement.setString(1, userName);</span><br><span class="line">            System.out.println(preparedStatement);</span><br><span class="line"></span><br><span class="line">            //第四步，执行查询</span><br><span class="line">            ResultSet rs = preparedStatement.executeQuery();</span><br><span class="line"></span><br><span class="line">            //第五步，处理ResultSet对象，转化为User对象.</span><br><span class="line">            while (rs.next()) &#123;</span><br><span class="line"></span><br><span class="line">                String username = rs.getString(&quot;username&quot;);</span><br><span class="line">                String password = rs.getString(&quot;password&quot;);</span><br><span class="line">                user = new User(username, password);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            printSQLException(e);</span><br><span class="line">        &#125;</span><br><span class="line">        return user;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public boolean updateUser(User user) throws SQLException &#123;</span><br><span class="line">        boolean rowUpdate;</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创建statement对象</span><br><span class="line">             PreparedStatement statement = connection.prepareStatement(UPDATE_USER_SQL)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向statement中赋值</span><br><span class="line">            statement.setString(1, user.getPassword());</span><br><span class="line">            statement.setString(2, user.getUserName());</span><br><span class="line"></span><br><span class="line">            //第四部，执行修改</span><br><span class="line">            rowUpdate = statement.executeUpdate() &gt; 0;</span><br><span class="line">        &#125;</span><br><span class="line">        return rowUpdate;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean deleteUser(String userName) throws SQLException &#123;</span><br><span class="line">        boolean rowDelete;</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创建statement</span><br><span class="line">             PreparedStatement statement = connection.prepareStatement(DELETE_USER_SQL)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向statement中赋值</span><br><span class="line">            statement.setString(1, userName);</span><br><span class="line"></span><br><span class="line">            //第四步，执行删除</span><br><span class="line">            rowDelete = statement.executeUpdate() &gt; 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return rowDelete;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //处理SQLException</span><br><span class="line">    private void printSQLException(SQLException ex) &#123;</span><br><span class="line">        for (Throwable e : ex) &#123;</span><br><span class="line">            if (e instanceof SQLException) &#123;</span><br><span class="line">                e.printStackTrace(System.err);</span><br><span class="line">                System.err.println(&quot;SQLState: &quot; + ((SQLException) e).getSQLState());</span><br><span class="line">                System.err.println(&quot;Error Code: &quot; + ((SQLException) e).getErrorCode());</span><br><span class="line">                System.err.println(&quot;Message: &quot; + e.getMessage());</span><br><span class="line">                Throwable t = ex.getCause();</span><br><span class="line">                while (t != null) &#123;</span><br><span class="line">                    System.out.println(&quot;Cause: &quot; + t);</span><br><span class="line">                    t = t.getCause();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>控制+业务层 UserServlet.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br></pre></td><td class="code"><pre><span class="line">package Dao;</span><br><span class="line"></span><br><span class="line">import Classes.User;</span><br><span class="line"></span><br><span class="line">import java.sql.*;</span><br><span class="line"></span><br><span class="line">public class UserDao &#123;</span><br><span class="line"></span><br><span class="line">    //JDBC驱动名及数据库URL，用户名以及密码。</span><br><span class="line">    private static final String DB_URL = &quot;jdbc:mysql://localhost:3306/test_db&quot;;</span><br><span class="line">    private static final String USER = &quot;root&quot;;</span><br><span class="line">    private static final String PASS = &quot;root&quot;;</span><br><span class="line"></span><br><span class="line">    //SQL语句</span><br><span class="line">    private static final String INSERT_USER_SQL = &quot;INSERT INTO user&quot; + &quot;(userName, password) VALUES&quot; + &quot;(?,?);&quot;;</span><br><span class="line">    private static final String SELECT_USER_BY_USERNAME = &quot;select userName, password from user where userName = ?;&quot;;</span><br><span class="line">    private static final String DELETE_USER_SQL = &quot;delete from user where userName = ?;&quot;;</span><br><span class="line">    private static final String UPDATE_USER_SQL = &quot;update User set password = ? where userName =?;&quot;;</span><br><span class="line"></span><br><span class="line">    //连接数据库</span><br><span class="line">    protected Connection getConnection() &#123;</span><br><span class="line">        Connection connection = null;</span><br><span class="line">        try &#123;</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            connection = DriverManager.getConnection(DB_URL, USER, PASS);</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        return connection;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void createUser(User user) throws SQLException &#123;</span><br><span class="line">        System.out.println(INSERT_USER_SQL);</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创建prepareStatement对象</span><br><span class="line">             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USER_SQL)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向preparedStatement中赋值</span><br><span class="line">            preparedStatement.setString(1, user.getUserName());</span><br><span class="line">            preparedStatement.setString(2, user.getPassword());</span><br><span class="line">            System.out.println(preparedStatement);</span><br><span class="line"></span><br><span class="line">            //第四步，执行创建</span><br><span class="line">            preparedStatement.executeUpdate();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            printSQLException(e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public User readUser(String userName) &#123;</span><br><span class="line">        User user = null;</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创件prepareStatement对象</span><br><span class="line">             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_USERNAME)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向preparedStatement中赋值</span><br><span class="line">            preparedStatement.setString(1, userName);</span><br><span class="line">            System.out.println(preparedStatement);</span><br><span class="line"></span><br><span class="line">            //第四步，执行查询</span><br><span class="line">            ResultSet rs = preparedStatement.executeQuery();</span><br><span class="line"></span><br><span class="line">            //第五步，处理ResultSet对象，转化为User对象.</span><br><span class="line">            while (rs.next()) &#123;</span><br><span class="line"></span><br><span class="line">                String username = rs.getString(&quot;username&quot;);</span><br><span class="line">                String password = rs.getString(&quot;password&quot;);</span><br><span class="line">                user = new User(username, password);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            printSQLException(e);</span><br><span class="line">        &#125;</span><br><span class="line">        return user;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public boolean updateUser(User user) throws SQLException &#123;</span><br><span class="line">        boolean rowUpdate;</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创建statement对象</span><br><span class="line">             PreparedStatement statement = connection.prepareStatement(UPDATE_USER_SQL)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向statement中赋值</span><br><span class="line">            statement.setString(1, user.getPassword());</span><br><span class="line">            statement.setString(2, user.getUserName());</span><br><span class="line"></span><br><span class="line">            //第四部，执行修改</span><br><span class="line">            rowUpdate = statement.executeUpdate() &gt; 0;</span><br><span class="line">        &#125;</span><br><span class="line">        return rowUpdate;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public boolean deleteUser(String userName) throws SQLException &#123;</span><br><span class="line">        boolean rowDelete;</span><br><span class="line"></span><br><span class="line">        //第一步，建立连接</span><br><span class="line">        try (Connection connection = getConnection();</span><br><span class="line"></span><br><span class="line">             //第二步，使用连接对象创建statement</span><br><span class="line">             PreparedStatement statement = connection.prepareStatement(DELETE_USER_SQL)) &#123;</span><br><span class="line"></span><br><span class="line">            //第三步，向statement中赋值</span><br><span class="line">            statement.setString(1, userName);</span><br><span class="line"></span><br><span class="line">            //第四步，执行删除</span><br><span class="line">            rowDelete = statement.executeUpdate() &gt; 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return rowDelete;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //处理SQLException</span><br><span class="line">    private void printSQLException(SQLException ex) &#123;</span><br><span class="line">        for (Throwable e : ex) &#123;</span><br><span class="line">            if (e instanceof SQLException) &#123;</span><br><span class="line">                e.printStackTrace(System.err);</span><br><span class="line">                System.err.println(&quot;SQLState: &quot; + ((SQLException) e).getSQLState());</span><br><span class="line">                System.err.println(&quot;Error Code: &quot; + ((SQLException) e).getErrorCode());</span><br><span class="line">                System.err.println(&quot;Message: &quot; + e.getMessage());</span><br><span class="line">                Throwable t = ex.getCause();</span><br><span class="line">                while (t != null) &#123;</span><br><span class="line">                    System.out.println(&quot;Cause: &quot; + t);</span><br><span class="line">                    t = t.getCause();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面 登录页面 index.jsp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: wangweipeng</span><br><span class="line">  Date: 2019-08-13</span><br><span class="line">  Time: 12:53</span><br><span class="line">  To change this template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Login&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;</span><br><span class="line">    &lt;!-- 调整页面上边距 --&gt;</span><br><span class="line">    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;h1&gt;LoginPage&lt;/h1&gt;</span><br><span class="line">    &lt;form name=&quot;from&quot; method=&quot;post&quot;&gt;</span><br><span class="line">        &lt;!--表格，三行一列，宽度200px--&gt;</span><br><span class="line">        &lt;table&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;userName&quot; placeholder=&quot;UserName&quot; style=&quot;width: 200px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot; style=&quot;width: 200px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td align=&quot;center&quot;&gt;</span><br><span class="line">                    &lt;input type=&quot;button&quot; value=&quot;login&quot; onclick=&quot;login()&quot; style=&quot;width: 80px;&quot;/&gt;</span><br><span class="line">                    &lt;input type=&quot;button&quot; value=&quot;register&quot; onclick=&quot;register()&quot; style=&quot;width: 80px;&quot;/&gt;</span><br><span class="line">                &lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--按钮执行的函数，为了使表单中不同的按钮可以执行不同的方法，所以将提交表单的方法卸载函数中--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    function login() &#123;</span><br><span class="line">        document.from.action = &quot;login&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--登录，对应UserServlet.java中的login方法--&gt;</span><br><span class="line"></span><br><span class="line">    function register() &#123;</span><br><span class="line">        document.from.action = &quot;register.jsp&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--注册页面--&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注册页面 register.jsp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: wangweipeng</span><br><span class="line">  Date: 2019-08-13</span><br><span class="line">  Time: 18:02</span><br><span class="line">  To change this template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Register&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;</span><br><span class="line">    &lt;!-- 调整页面上边距 --&gt;</span><br><span class="line">    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;h1&gt;RegisterPage&lt;/h1&gt;</span><br><span class="line">    &lt;form name=&quot;from&quot; method=&quot;post&quot;&gt;</span><br><span class="line">        &lt;table&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;userName&quot; placeholder=&quot;UserName&quot; style=&quot;width: 200px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot; style=&quot;width: 200px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td align=&quot;center&quot;&gt;</span><br><span class="line">                    &lt;!-- 按键调用register0，login两个js函数--&gt;</span><br><span class="line">                    &lt;input type=&quot;button&quot; value=&quot;register&quot; onclick=&quot;register()&quot;  style=&quot;width: 80px;&quot;/&gt;</span><br><span class="line">                    &lt;input type=&quot;button&quot; value=&quot;login&quot; onclick=&quot;login()&quot; style=&quot;width: 80px;&quot;/&gt;</span><br><span class="line">                &lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--按钮执行的函数，为了使表单中不同的按钮可以执行不同的方法，所以将提交表单的方法卸载函数中--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    function login() &#123;</span><br><span class="line">        document.from.action = &quot;index.jsp&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--返回登录页面--&gt;</span><br><span class="line">    function register()&#123;</span><br><span class="line">        document.from.action=&quot;register&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--注册，对应UserServlet.java中的register方法--&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用户页面 user.jsp </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: wangweipeng</span><br><span class="line">  Date: 2019-08-13</span><br><span class="line">  Time: 18:02</span><br><span class="line">  To change this template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;</span><br><span class="line">&lt;% String userName = (String) request.getAttribute(&quot;userName&quot;);</span><br><span class="line">    String password = (String) request.getAttribute(&quot;password&quot;); %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;User&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;</span><br><span class="line">    &lt;!-- 调整页面上边距 --&gt;</span><br><span class="line">    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;h1&gt;UserPage&lt;/h1&gt;</span><br><span class="line">    &lt;form name=&quot;from&quot; method=&quot;post&quot;&gt;</span><br><span class="line">        &lt;table align=&quot;center&quot;&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td width=&quot;100px&quot; align=&quot;right&quot;&gt;&lt;p&gt;userName:&lt;/p&gt;&lt;/td&gt;</span><br><span class="line">                &lt;td width=&quot;100px&quot; align=&quot;left&quot;&gt;&lt;p&gt;&lt;%= userName%&gt;</span><br><span class="line">                &lt;/p&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td width=&quot;100px&quot; align=&quot;right&quot;&gt;&lt;p&gt;password:&lt;/p&gt;&lt;/td&gt;</span><br><span class="line">                &lt;td width=&quot;100px&quot; align=&quot;left&quot;&gt;&lt;p&gt;&lt;%= password%&gt;</span><br><span class="line">                &lt;/p&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td align=&quot;right&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;modify&quot; onclick=&quot;modify()&quot; style=&quot;width: 80px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">                &lt;td align=&quot;left&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;logout&quot; onclick=&quot;logout()&quot; style=&quot;width: 80px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td align=&quot;center&quot; colspan=&quot;2&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;login&quot; onclick=&quot;login()&quot; style=&quot;width:164px&quot;&gt;</span><br><span class="line">                &lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--按钮执行的函数，为了使表单中不同的按钮可以执行不同的方法，所以将提交表单的方法卸载函数中--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line"></span><br><span class="line">    function modify() &#123;</span><br><span class="line">        document.from.action = &quot;modify.jsp?userName=&lt;%= userName%&gt;&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--修改页面--&gt;</span><br><span class="line"></span><br><span class="line">    function logout() &#123;</span><br><span class="line">        document.from.action = &quot;logout?userName=&lt;%= userName%&gt;&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--注销，对应UserServlet.java中的logout方法--&gt;</span><br><span class="line"></span><br><span class="line">    function login() &#123;</span><br><span class="line">        document.from.action = &quot;index.jsp&quot;;//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--返回登录页面--&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改页面 modify.jsp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">  Created by IntelliJ IDEA.</span><br><span class="line">  User: wangweipeng</span><br><span class="line">  Date: 2019-08-13</span><br><span class="line">  Time: 18:03</span><br><span class="line">  To change this template use File | Settings | File Templates.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;title&gt;Modify&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div align=&quot;center&quot;&gt;</span><br><span class="line">    &lt;!-- 调整页面上边距 --&gt;</span><br><span class="line">    &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;h1&gt;ModifyPage&lt;/h1&gt;</span><br><span class="line">    &lt;form name=&quot;from&quot; method=&quot;post&quot;&gt;</span><br><span class="line">        &lt;table&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;&lt;p width=&quot;200px&quot; align=&quot;left&quot; id=&quot;userName&quot;&gt;&lt;/p&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot; style=&quot;width: 200px;&quot;/&gt;&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td align=&quot;center&quot;&gt;</span><br><span class="line">                    &lt;input type=&quot;button&quot; value=&quot;modify&quot; onclick=&quot;modify()&quot; style=&quot;width: 170px;&quot;/&gt;</span><br><span class="line">                &lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--按钮执行的函数，为了使表单中不同的按钮可以执行不同的方法，所以将提交表单的方法卸载函数中--&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    function modify() &#123;</span><br><span class="line">        document.from.action = &quot;modify?userName=&quot; + getQueryVariable(&quot;userName&quot;);//提交的url</span><br><span class="line">        document.from.submit();</span><br><span class="line">    &#125;&lt;!--修改，对应UserServlet.jsp中的modify方法，用户名通过url传参，密码通过表单传参--&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--解析url参数的方法--&gt;</span><br><span class="line">    function getQueryVariable(variable) &#123;</span><br><span class="line">        var query = window.location.search.substring(1);</span><br><span class="line">        var vars = query.split(&quot;&amp;&quot;);</span><br><span class="line">        for (var i = 0; i &lt; vars.length; i++) &#123;</span><br><span class="line">            var pair = vars[i].split(&quot;=&quot;);</span><br><span class="line">            if (pair[0] == variable) &#123;</span><br><span class="line">                return pair[1];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return (false);</span><br><span class="line">    &#125;</span><br><span class="line">    &lt;!--将从URL中解析出来的参数填入id为userName的元素中--&gt;</span><br><span class="line">    document.getElementById(&quot;userName&quot;).innerHTML = &quot;userName:&quot; + getQueryVariable(&quot;userName&quot;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>解析</p>
+<ul>
+<li>开发环境：IDE：idea 2019.1.3、Java：jdk11、server Tomcat 8.5 mysql 5.5</li>
+<li>技术栈 HTML、javascript、java、servlet、jdbc </li>
+<li>相对于基本的增删改查，一个基本的登录系统增加了用户名密码是否为空、用户名是否存在、密码是否正确等校验，页面的跳转，以及参数在页面中传递等技术细节。</li>
+</ul>
+</li>
+<li><p>总结：从最初的想法，到最后系统的完成，细节方面在开发与测试中逐渐变得清晰，比如原来并没有想到的用户名不为空但不存在与数据库中的情况等，具体细节的完善可以参考设计流程图与完成之后的流程图，系统的实现并没有参考其它登录系统，完全按照自己的想法来完成，参数传递部分给登录系统带来很大的安全问题，页面也不够美观，系统里有一些用到的代码也不懂，但这只是一个开始，目标是迭代出一个最够安全，易用，美观的登录系统模组。具体部署的细节与环境的配置自行google,或许以后会写一写这方面的文章，或许不会<br></p>
+</li>
+<li><p>最后附上项目的GitHub地址：<a href="https://github.com/aPeng977/LoginSystem" target="_blank" rel="noopener">https://github.com/aPeng977/LoginSystem</a>  &amp; looking forward to your star!</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://apeng977.github.io/2019/09/03/LoginSystem/" data-id="ck05g7lcn0000u7bpabzlxxvq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/26/htmlTest/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">htmlTest</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/09/03/LoginSystem/">LoginSystem</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/26/htmlTest/">htmlTest</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/21/2019-7-20/">2019.7.20</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/20/mdTest/">mdTest</a>
+          </li>
+        
+          <li>
+            <a href="/2019/07/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 aPeng977<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
